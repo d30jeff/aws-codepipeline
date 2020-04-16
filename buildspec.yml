@@ -5,7 +5,7 @@ phases:
       - echo Installing NodeJS
       - yum -y update
       - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
-      - yum clean all && sudo yum makecache fast
+      - yum clean all && yum makecache fast
       - yum install -y gcc-c++ make
       - yum install -y nodejs
       - node --version
