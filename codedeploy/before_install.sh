@@ -16,5 +16,6 @@ curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js |
 
 yvm install latest
 
-rm -rf /usr/code
-mkdir -p /usr/code
+rm -rf /home/app
+mkdir -p /home/app
+

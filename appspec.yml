@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /usr/code
+    destination: /home/app
     overwrite: true
 permissions:
-  - object: /usr/code/codedeploy
+  - object: /home/app
     pattern: "*.sh"
     owner: root
     group: root

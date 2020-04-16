@@ -5,6 +5,5 @@ curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js |
 
 yvm install latest
 
-cd /usr/code
-yarn
+cd /home/app
 yarn pm2 stop ecosystem.config.js
