@@ -1,8 +1,8 @@
 version: 0.2
 phases:
   install:
-    runtime-versions
-      nodejs:12.12.0
+    runtime-versions:
+      nodejs: 12.12.0
     commands:
       - echo Installing yvm
       - curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
