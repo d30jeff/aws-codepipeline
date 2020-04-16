@@ -13,7 +13,7 @@ phases:
       - yarn
   build:
     commands:
-      - yarn nest start
+      - yarn build
 artifacts:
   files:
     - "**/*"
