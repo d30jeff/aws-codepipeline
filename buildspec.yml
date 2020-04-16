@@ -4,10 +4,9 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - echo Installing yvm
-      - curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
-      - yvm install latest
-      - yvm use latest
+      - echo Installing yarn
+      - curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
+      - yum install yarn
   pre_build:
     commands:
       - echo Installing Dependencies
