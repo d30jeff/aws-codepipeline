@@ -2,12 +2,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing nvm
-      - touch ~/.bash_profile
-      - curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash
-      - . ~/.bash_profile
-      - nvm install 12.12.0
-      - nvm alias default 12.12.0
+      - echo Installing NodeJS
+      - yum -y update
+      - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+      - yum clean all && sudo yum makecache fast
+      - yum install -y gcc-c++ make
+      - yum install -y nodejs
+      - node --version
       - echo Installing yvm
       - curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
       - yvm install latest
