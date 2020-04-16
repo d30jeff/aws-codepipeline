@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # This script is executed after the source is copied to the instances
-curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
-
-yvm install latest
+source /home/ec2-user/.bash_profile
 
 cd /home/app
 yarn pm2 stop ecosystem.config.js
