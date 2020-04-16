@@ -17,6 +17,3 @@ source /home/ec2-user/.bash_profile
 curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
 
 yvm install latest
-
-rm -rf /home/app
-mkdir -p /home/app
