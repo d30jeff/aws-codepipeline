@@ -17,3 +17,8 @@ phases:
   build:
     commands:
       - yarn nest start
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: .
