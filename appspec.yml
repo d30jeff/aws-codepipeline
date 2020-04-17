@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/app
+    destination: /home/ec2-user
     overwrite: true
 permissions:
-  - object: /home/app
+  - object: /home/ec2-user
     pattern: "*.sh"
     owner: root
     group: root
