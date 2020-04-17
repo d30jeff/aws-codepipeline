@@ -11,7 +11,7 @@ export class AppController {
   }
 
   @Get()
-  getHello2(): string {
+  getHelloTwo(): string {
     return this.appService.getHello();
   }
 }
