@@ -4,6 +4,8 @@
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+cd /home/app
+
 echo "Stopping app"
 
 yarn pm2 stop ecosystem.config.js
