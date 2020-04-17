@@ -9,11 +9,15 @@ phases:
       - yum install yarn -y
   pre_build:
     commands:
+      - rm -rf node_modules
       - echo Installing dependencies
       - yarn
   build:
     commands:
       - yarn build
+  post_build:
+    commands:
+      - mkdir -p /home/ec2-user/services
 artifacts:
   files:
     - '**/*'
