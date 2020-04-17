@@ -3,14 +3,9 @@
 # This script is executed before copying the source
 
 yum -y update
+yum install -y gcc-c++ make
 
-# Install NVM
-curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-nvm install 12.12.0 && nvm alias default 12.12.0
+curl -sL https://rpm.nodesource.com/setup_12.x | -E bash -
 
 curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
 yum install yarn -y
