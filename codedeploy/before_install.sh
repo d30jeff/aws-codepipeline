@@ -2,7 +2,7 @@
 
 # This script is executed before copying the source
 
-rm -rf .
+rm -rf /home/app
 
 yum -y update
 yum install -y gcc-c++ make
