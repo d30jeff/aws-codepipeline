@@ -1,4 +1,39 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "apps/aws-codepipeline/src",
+  "monorepo": true,
+  "root": "apps/aws-codepipeline",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/aws-codepipeline/tsconfig.app.json"
+  },
+  "projects": {
+    "aws-codepipeline": {
+      "type": "application",
+      "root": "apps/aws-codepipeline",
+      "entryFile": "main",
+      "sourceRoot": "apps/aws-codepipeline/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/aws-codepipeline/tsconfig.app.json"
+      }
+    },
+    "mobile-api": {
+      "type": "application",
+      "root": "apps/mobile-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/mobile-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mobile-api/tsconfig.app.json"
+      }
+    },
+    "web-api": {
+      "type": "application",
+      "root": "apps/web-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/web-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/web-api/tsconfig.app.json"
+      }
+    }
+  }
 }
