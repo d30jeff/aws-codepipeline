@@ -14,7 +14,7 @@ phases:
       - yarn
   build:
     commands:
-      - yarn build
+      - yarn build mobile-api
   post_build:
     commands:
       - mkdir -p /home/ec2-user/mobile-api

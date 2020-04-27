@@ -3,6 +3,8 @@
 # This script is executed before copying the source
 
 rm -rf /home/ec2-user/mobile-api/
+mkdir -p /home/ec2-user/mobile-api/
+cd /home/ec2-user/mobile-api/
 
 yum -y update
 yum install -y gcc-c++ make
