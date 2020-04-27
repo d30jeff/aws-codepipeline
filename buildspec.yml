@@ -18,6 +18,7 @@ phases:
   post_build:
     commands:
       - mkdir -p /home/ec2-user/mobile-api
+      - chown -R root:ec2-user /home/ec2-user/mobile-api
 artifacts:
   files:
     - '**/*'
