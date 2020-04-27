@@ -2,7 +2,7 @@
 
 # This script is executed after the source is copied to the instances
 
-cd /home/ec2-user
+cd /home/ec2-user/mobile-api
 
 echo "Stopping app"
 
